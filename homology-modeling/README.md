@@ -1,109 +1,93 @@
 # Homology Modeling
 
-> Protein structure prediction using comparative (homology) modeling to generate reliable three-dimensional protein structures for downstream computational drug discovery.
+> Comparative protein structure prediction using template-based modeling for computational drug discovery.
 
 ---
 
 # Overview
 
-Homology modeling predicts the three-dimensional structure of a target protein by using experimentally solved structures of homologous proteins as templates.
+Homology modeling is a computational technique used to predict the three-dimensional structure of a protein based on experimentally resolved homologous structures.
 
-The generated structural models provide the foundation for molecular docking, molecular dynamics simulations, virtual screening, and structure-based drug discovery.
-
-This repository documents the homology modeling workflow performed during computational drug discovery training using MODELLER and AlphaFold-based structural resources.
-
----
-
-# Objectives
-
-- Predict protein structures using comparative modeling
-- Evaluate structural quality
-- Select optimal template structures
-- Validate generated models
-- Prepare proteins for downstream docking studies
-
----
-
-# Software Used
-
-| Software | Purpose |
-|----------|---------|
-| MODELLER | Comparative homology modeling |
-| AlphaFold Database | Predicted protein structures |
-| UCSF Chimera | Structure visualization |
-| PyMOL | Molecular visualization |
-| Swiss-PDB Viewer | Structure inspection |
+This workflow demonstrates the process of identifying suitable templates, generating structural models using **MODELLER**, validating predicted structures, and preparing them for downstream computational analyses such as molecular docking.
 
 ---
 
 # Workflow
 
-```
-Protein Sequence
+<p align="center">
+<img src="figures/02_homology_model_workflow.png" width="650">
+</p>
 
-↓
+---
 
-Template Identification
+# Protein Structure
 
-↓
+The predicted RIPK2 protein structure generated through homology modeling.
 
-Sequence Alignment
+<p align="center">
+<img src="figures/01_ripk2_structure.png" width="450">
+</p>
 
-↓
+---
 
-Template Selection
+# Template Selection
 
-↓
+Suitable structural templates were identified through sequence similarity searches against the Protein Data Bank (PDB).
 
-Model Generation
+<p align="center">
+<img src="figures/03_sequence_alignment.png" width="900">
+</p>
 
-↓
+---
 
-Loop Refinement
+# Structural Validation
 
-↓
+## Ramachandran Plot
 
-Model Validation
+The stereochemical quality of the predicted model was evaluated using PROCHECK.
 
-↓
+<p align="center">
+<img src="figures/04_ramachandran_plot.png" width="500">
+</p>
 
-Best Model Selection
+---
 
-↓
+## SAVES Validation
 
-Protein Preparation
-```
+The final model was further assessed using the SAVES server to evaluate structural quality.
+
+<p align="center">
+<img src="figures/05_model_validation.png" width="650">
+</p>
+
+---
+
+# Software Used
+
+- MODELLER
+- BLAST
+- Protein Data Bank (PDB)
+- Discovery Studio Visualizer
+- PROCHECK
+- SAVES v6.1
 
 ---
 
 # Learning Outcomes
 
-Through this work, I learned:
-
 - Comparative protein modeling
+- Template identification
 - Sequence alignment
-- Template selection
 - Structural validation
-- Protein visualization
-- Preparing structures for molecular docking
+- Model quality assessment
+- Preparation of protein structures for molecular docking
 
 ---
 
 # Applications
 
-- Drug discovery
-- Structure-based drug design
+- Structure-based drug discovery
 - Molecular docking
 - Protein engineering
 - Functional annotation
-
----
-
-# References
-
-- MODELLER Documentation
-- AlphaFold Protein Structure Database
-- Swiss-PDB Viewer
-- UCSF Chimera
-
----
+- Computational structural biology
