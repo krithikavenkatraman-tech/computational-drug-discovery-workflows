@@ -1,46 +1,14 @@
----
+# Figures
 
-# Key Results
+This folder contains representative figures generated during the molecular docking workflow.
 
-| Parameter | Value |
-|-----------|--------|
-| Software | AutoDock4 |
-| Best Docking Run | Run 4 |
-| Best Model | MODEL 4 |
-| Best Binding Energy | **−10.25 kcal/mol** |
-| Estimated Ki | **30.56 nM** |
+## Figures
 
----
+| File | Description |
+|------|-------------|
+| 01_docking_workflow.png | Overall molecular docking workflow using AutoDock4. |
+| 02_docking_pose.png | Best-scoring ligand docked into the RIPK2 binding pocket. |
 
-# Repository Structure
+## Notes
 
-```
-molecular-docking/
-├── protein/
-├── ligand/
-├── configuration/
-├── results/
-├── scripts/
-├── figures/
-└── README.md
-```
-
----
-
-# Representative Docking Pose
-
-The figure below shows the best-scoring docking pose obtained from AutoDock4.
-
-*(Insert 02_docking_pose.png here once GitHub renders the images.)*
-
----
-
-# Skills Demonstrated
-
-- Protein preparation
-- Ligand preparation
-- Grid generation
-- AutoDock4 docking
-- Docking result interpretation
-- Python automation for docking analysis
-- GitHub documentation
+These figures are included for visualization purposes and represent key stages of the docking workflow.
