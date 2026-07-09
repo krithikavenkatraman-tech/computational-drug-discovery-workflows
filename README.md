@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="figures/repository_banner1.png" width="100%">
+</p>
+
 # Computational Drug Discovery Workflows
 
 A collection of computational drug discovery workflows demonstrating practical applications of bioinformatics, cheminformatics, molecular modelling, and structure-based drug design.
